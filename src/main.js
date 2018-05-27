@@ -23,7 +23,7 @@ app.on('ready', _ => {
 })
 
 ipc.on('countdown-start', () => {
-    countdown(count => {
+    countdown((count) => {
         mainWindow.webContents.send('countdown', count)
     })
 })

@@ -1,5 +1,6 @@
 module.exports = countdown = (tick) => {
     let count = 10
+    console.log('inside countdown.js outside loop')
     let timer = setInterval(() => {
         count--
         tick(count)
